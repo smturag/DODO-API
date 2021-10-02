@@ -1,6 +1,6 @@
 const user = [
       {
-            id: 1,
+            id:"1",
             name: 'S.M.Turag',
             mail:'turag.shagor01@gmail.com',
             dob: '10-8-1996',
@@ -14,7 +14,7 @@ const user = [
             address:'abc'
       },
       {
-            id: 2,
+            id:"2",
             name: 'S.M.Turag',
             mail:'turag.shagor01@gmail.com',
             dob: '10-8-1996',

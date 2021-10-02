@@ -1,8 +1,9 @@
 const { gql } = require('apollo-server-express');
 
 let schema= gql`
+#Schema
 type User{
-      id: Int!
+      id: ID!
       name: String!
       mail: String!
       dob: String
@@ -16,9 +17,12 @@ type extra{
 }
 
 type Query {
-      AllUser: [User]!
+      getAllUser: [User!]!
+      getUser(id: ID!): User
 }
 
+
+#Mutation
 input extraInput{
       comName: String
       duration: String
@@ -34,6 +38,8 @@ type Mutation{
       address: String
       ): User!
 }
+
+
 
 `
 module.exports =  schema 
