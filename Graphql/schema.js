@@ -13,7 +13,7 @@ type User{
 }
 type extra{
       comName: String
-      duration: String
+      duration: Int
 }
 
 type Query {
@@ -25,7 +25,7 @@ type Query {
 #Mutation
 input extraInput{
       comName: String
-      duration: String
+      duration: Int
 }
 
 type Mutation{

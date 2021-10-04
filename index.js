@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+var bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const  typeDefs  = require('./Graphql/schema')
 const resolvers  =require('./Graphql/Resolvers')
